@@ -2,6 +2,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/components/ui/theme/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import ConvexClientProvider from "@/providers/ConvexClientProvider";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Analytics />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
