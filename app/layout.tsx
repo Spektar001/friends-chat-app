@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Friends Chat App",
-  description: "Realtime chat app using NextJS",
+  description: "Realtime chat app using NextJS!",
 };
 
 export default function RootLayout({
